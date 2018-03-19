@@ -1,12 +1,14 @@
 package br.edu.iff.pooa20172.trabalhodb.Model;
 
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 /**
  * Created by Wesley Gomes on 17/03/2018.
  */
 
 public class Proprietario extends RealmObject {
+    @PrimaryKey
     private int id;
     private String nome, endereco, telefone;
 

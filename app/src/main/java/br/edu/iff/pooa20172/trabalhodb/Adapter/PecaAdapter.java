@@ -60,13 +60,12 @@ public class PecaAdapter extends RecyclerView.Adapter {
 
         public PecaViewHolder(View itemView) {
             super(itemView);
-            nome = (TextView) itemView.findViewById(R.id.nome);
-            descricao = (TextView) itemView.findViewById(R.id.descricao);
+            nome = itemView.findViewById(R.id.nome);
+            descricao = itemView.findViewById(R.id.descricao);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     clickListener.onClick(pecas.get(getLayoutPosition()));
-
                 }
             });
 

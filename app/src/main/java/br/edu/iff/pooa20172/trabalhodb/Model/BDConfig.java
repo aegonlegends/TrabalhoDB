@@ -17,7 +17,7 @@ public class BDConfig extends Application {
         Realm.init(getApplicationContext());
 
         RealmConfiguration.Builder builder = new RealmConfiguration.Builder();
-        builder.name("bookstore.realm");
+        builder.name("trabalhodb.realm");
         builder.schemaVersion(0);
         builder.deleteRealmIfMigrationNeeded();
         RealmConfiguration realmConfiguration = builder.build();
